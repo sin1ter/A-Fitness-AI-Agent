@@ -14,6 +14,17 @@ Before running the code, we have the following dependencies installed:
 pip install pydantic_ai openai python-dotenv
 ```
 
+### To run this
+
+```bash
+docker build -t fastapi-app .
+```
+
+```bash
+docker run -d -p 8000:80 fastapi-app:latest
+```
+
+
 ### AI Agent Setup
 
 #### Fitness Agent
@@ -40,14 +51,3 @@ motivational_agent = Agent(
 )
 ```
 This tool interacts with the `motivational_agent` to generate 5 motivational quotes related to fitness.
-
-
-### To run this
-
-```bash
-docker build -t fastapi-app .
-```
-
-```bash
-docker run -d -p 8000:80 fastapi-app:latest
-```
